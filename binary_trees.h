@@ -2,6 +2,7 @@
 #define _BINARY_TREES_H_
 
 #include <stdio.h>
+#include <stdlib.h>
 
 
 /**
@@ -37,5 +38,6 @@ typedef struct levelorder_queue_s
 } levelorder_queue_t;
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 
 #endif
